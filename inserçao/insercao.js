@@ -1,5 +1,5 @@
 //aqui vem as funcoes em blocos pra editar o html
-
+// muito importante
 function doc(a,b){
     document.getElementById(a).innerText = b
 }
