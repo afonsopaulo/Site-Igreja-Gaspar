@@ -24,31 +24,13 @@ function proximoCulto(a,b,c,d,e,f,g) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //aqui vai ficar a invocaçoes da funcoes
 
-fraseNoticia("Os mais poderosos intelectos da Terra não podem compreender a Deus. Os homens podem estar sempre a pesquisar, sempre a aprender, e ainda há, para além, o infinito.",
+fraseNoticia("Se você quer ser um servo de Deus, dissemine sua palavra e seja um pedaço importante do céu aqui mesmo na Terra.",
 
-"Ellen G. White")
+"Desconhecido")
 
-proximoCulto("Ministerio Pessoal","Enos","Irma Leia","Luzidete","Karol","Santa","Luana")
+proximoCulto("Ministerio da Familia","Enos","Isabelly","Luzidete","Karol","Santa","---")
 
 
 
