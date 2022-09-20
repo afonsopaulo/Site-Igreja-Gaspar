@@ -21,27 +21,12 @@ function proximoCulto(a,b,c,d,e,f,g) {
 }
 
 
-
-
-
 //aqui vai ficar a invocaçoes da funcoes
 
 fraseNoticia("Se você quer ser um servo de Deus, dissemine sua palavra e seja um pedaço importante do céu aqui mesmo na Terra.",
 
 "Desconhecido")
 
-proximoCulto("Ministerio da Familia","Enos","Isabelly","Luzidete","Karol","Santa","---")
-
-
-
-
-
-
-
-
-
-
-
-
+proximoCulto("Ministerio Infantil","Yara","Manu","Karine","---","Alcangela","---")
 
 
