@@ -44,6 +44,23 @@
     .escala{
         width: 70%;
     }
+
+    .eventos{
+        width: 80%;
+    }
+
+    .sites{
+        flex-direction: column;
+        align-items: center;
+        height: 900px;
+    }
+    .sites iframe{
+        height: 95%;
+        width: 90%;
+    }
+    .cont-dizimo{
+        width: 80%;
+    }
 }
 
 @media screen and (max-width:315px){

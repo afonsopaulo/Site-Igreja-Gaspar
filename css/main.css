@@ -1,10 +1,15 @@
+/*cores definida por variaveis*/
 :root{
     --preto:rgb(0,0,0);
     --azul:rgb(0,0,255);
     --ama: rgb(251, 255, 0);
     --verde: rgb(0, 255, 42);
+    --white:  rgb(255,255,255);
+    --rosa: rgb(255,20,147);
+    --azulclaro: rgb(176,224,230);
 }
 
+/*animação*/
 @keyframes colors{
             0% {
                 background-position: 0% 50%;
@@ -30,13 +35,13 @@ font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
 }
 
+/*header e parte de navegaçao do site*/
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--preto);
-    height: 100px;
-    color: white;
+    background-color: var(--rosa);
+    color: var(--white);
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -45,8 +50,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    width: 230px;
-   
+    width: 250px;
 }
 .logo img{
     width: 143px;
@@ -54,6 +58,7 @@ header{
 .logo h1{
     font-size: 24px;
     margin-bottom: 10px;
+    font-weight: 900;
 }
 
 
@@ -71,11 +76,11 @@ header{
     list-style-type: none;
     margin-right: 10px;
     padding: 8px;
-    background-color: rgba(109, 96, 96, 0.4);
+    background-color: rgba(109, 96, 96, 0.3);
     transition: 0.10s;
 }
 .navegacao li:hover{
-    background-color: var(--azul);
+    background-color: var(--rosa);
     cursor: pointer;
     transition: 0.10s;
 }
@@ -83,7 +88,9 @@ header{
     color: white;
     text-decoration: none;
 }
+/*fim*/
 
+/*frase de algum autor , ou noticia dada pra igreja*/
 .frase-noticia{
     width: 85%;
     margin: auto;
@@ -97,6 +104,7 @@ header{
 .frase-noticia :nth-child(2){
     margin-top: 10px;
 }
+/*fim*/
 
 
 .titulo h2{
@@ -142,12 +150,15 @@ main{
     justify-content: center;
     width: 100%;
     height: 150px;
-    background-color: var(--azul);
     font-size: 30px;
     padding: 30px;
-    background: linear-gradient(90deg, #0C8A7F, #1222AF, #f71686, #c403a1);
+    color: var(--white);
+    border-radius: 100px;
+    
+    background: linear-gradient(90deg, #f71686, #FF69B4, #f71686, #C71585);
     background-size: 400% 400%; 
     animation: colors 15s ease infinite;
+    
 }
 .item :nth-child(2){
     color: var(--preto);
@@ -159,8 +170,8 @@ footer{
     justify-content: space-around;
     align-items: center;
     height: 200px;
-    background-color: var(--preto);
-    color: white;
+    background-color: var(--rosa);
+    color: var(--white);
     margin-bottom: 0px;
    
 }
@@ -192,80 +203,156 @@ footer{
     margin: 15px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
+        
 }
 
 .r{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: solid 1px var(--preto);
 }
+
 .escala-item1{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    color: white;
-    background-color: var(--preto);
+    color: var(--white);
+    background-color: var(--rosa);
+    
 
-    background: linear-gradient(90deg, #0C8A7F, #1222AF, #f71686, #c403a1);
+    /*
+    background: linear-gradient(90deg, #c403a1, #f1ff32, #f1ff32, #c403a1);
     background-size: 400% 400%; 
     animation: colors 15s ease infinite;
-
+    */
 
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-
-
 /*parte de testes*/
 
 
 .eventos{
-    width: 300px;
+    width: 60%;
     margin: auto;
 }
 .eventos img{
+    width: 100%;
+}
+
+/*parte do sites do iframe*/
+.sites{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 700px; 
+    width: 90%; 
+    margin: auto;
+    margin-top: 50px; 
+}
+.sites iframe{
+    margin: auto;
+    height: 700px;
+    width: 90%;
+}
+
+/*estilo do svg colocado no site*/
+
+.svg{
+    width: 300px;
+    margin: auto;
+    margin-top: 100px;
+}
+.svg img{
     width: 300px;
 }
 
+/*estilo da calculadora de dizimos e ofertas*/
 
+.cont-dizimo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--rosa);
+    border-radius: 30px;
+    width: 60%;
+    margin: auto;
+    margin-top: 70px
+}
+.cont-dizimo h2{
+    text-align: center;
+    padding-top: 15px;
+    max-width: 300px;
+    color: white;
+}
 
+.valores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    color: white;
+    font-size: 18px;
+}
+.valores label{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+.valores input{
+    text-align: center;
+    width: 80%;
+    height: 25px;
+    border-radius: 15px;
+    border: 0px;
+    color: var(--rosa);
+}
+.valores button{
+    width: 80px;
+    height: 25px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: white;
+    color: var(--rosa);
+}
 
+.resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px;
+    font-size: 20px;
+}
 
+.dizimo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    background-color: rgba(255,20,147, 0.9);
+    width: 200px;
+    padding: 5px;
+    color: white;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.pacto{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+    background-color: rgba(255,20,147, 0.1);
+    width: 200px;
+    color: white;
+}
 
 
 

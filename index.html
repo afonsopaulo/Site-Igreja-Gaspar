@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Iasd Gaspar</title>
+	<link rel="shortcut icon" href="img/log5.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" href="css/resposivo.css">
 
@@ -19,15 +20,16 @@
 
 	<header>
 		<div class="logo">
-			<img src="https://iconape.com/wp-content/files/ga/182893/svg/182893.svg" alt="">
+			<img src="img/log6.png" alt="Imagem da Igreja">
 			<h1>Gaspar</h1>
+			<!--https://iconape.com/wp-content/files/ga/182893/svg/182893.svg-->
 		</div>
 		<nav class="navegacao">
 			<ul>
-				<li><a href="index.html"><i class="fa-sharp fa-solid fa-house"></i></a></li>
-				<!--<li><a href="./mes01.html">Julho</a></li>
-				<li><a href="./mes02.html">Agosto</a></li>-->
-				<li><a href="./paginas/mes03.html">Setembro</a></li>
+				<a href="index.html"><li><i class="fa-sharp fa-solid fa-house"></i></li></a>
+				<li><a href="./paginas/mes01.html">Outubro</a></li>
+				<li><a href="./paginas/mes02.html">Novembro</a></li>
+				<li><a href="./paginas/mes03.html">Dezembro</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -37,17 +39,25 @@
 		</p>
 		<p id="autor"></p>
 	</div>
-	<!--
-	<div class="titulo"><h2>Domingo Não Perca</h2></div>
+	
+	<!--<div class="titulo"><h2>Domingo Não Perca</h2></div>-->
 	<div class="eventos">
-		<img src="./img/01.jpeg">
+		<img src="./img/02.jpeg">
 	</div>
-	-->
+	
 
-	<div class="titulo"><h2>Proximo Culto</h2></div>
+	<div class="titulo"><h2>Resumo da lição jovens</h2></div>
+
+	<div class="sites">
+		<iframe src="https://comtextobiblico.com.br/"></iframe>
+		
+	</div>
+
+
+	<!--<div class="titulo"><h2>Proximo Culto</h2></div>-->
 
 	<main>
-		
+		<!--
 		<div class="item">
 			<p id="p1">----</p>
 			<p>Pregaçao</p>
@@ -82,19 +92,57 @@
 			<p id="p7">-----</p>
 			<p>Sonoplastia</p>
 		</div>
-		
+	-->
 	</main>
 
+	<div class="cont-dizimo">
+				<h2>Calcule Seu Dizimo e Pacto</h2>
+				<div class="valores">
+					<label>Salario</label>
+					<input id="salario" type="number" name="Salario" placeholder="Digite aqui seu Salario">
 
+					<label>% do Pacto</label>
+					<input id="pacto" type="number" name="Salario" placeholder="Porcentagem do seu Pacto">
+
+					<button onclick="calcular()">Calcular</button>
+				</div>
+				
+
+				<div class="resultado">
+					<div class="dizimo">
+						<div>Dizimo</div>
+						<div id="dizimo">R$ 0,00</div>
+					</div>
+					<div class="pacto">
+						<div>Pacto</div>
+						<div id="p">R$ 0,00</div>
+					</div>
+					
+				</div>
+	</div>
+
+	<div class="titulo"><h2>Quer devolver o Dizimo via Pix</h2></div>
+	<div class="eventos">
+		<img src="./img/pix.jpeg">
+	</div>
+
+
+
+	
+	<div class="svg">
+		<img src="./img/imgp.svg">
+	</div>
+
+	
 
 	<footer>
 		
 		<nav class="navegacao">
 			<ul>
 				<li><a href="index.html"><i class="fa-sharp fa-solid fa-house"></i></a></li>
-				<!--<li><a href="./mes01.html">Julho</a></li>
-				<li><a href="./mes02.html">Agosto</a></li>-->
-				<li><a href="./paginas/mes03.html">Setembro</a></li>
+				<li><a href="./paginas/mes01.html">Outubro</a></li>
+				<li><a href="./paginas/mes02.html">Novembro</a></li>
+				<li><a href="./paginas/mes03.html">Dezembro</a></li>
 			</ul>
 		</nav>
 
@@ -102,6 +150,8 @@
 		<p>Igreja Adventista Do Setimo Dia Gaspar</p>
 	
 	</footer>
+
+	
 
 
 	<script src="./inserçao/insercao.js"></script>

@@ -27,6 +27,17 @@ fraseNoticia("Se você quer ser um servo de Deus, dissemine sua palavra e seja u
 
 "Desconhecido")
 
-proximoCulto("Ministerio Infantil","Yara","Manu","Karine","---","Alcangela","---")
+proximoCulto("---","---","---","---","---","---","---")
+// pregadores , diacono , parte especial , trabalho de cantico2X , recpçao , sonosplastia 
 
+// aqui a funçao pra fazer funcionar a parte de calculo dos dizimos
+function calcular(){
+    let sal = document.getElementById("salario").value
+    let pac = document.getElementById("pacto").value
 
+    let dizimo = sal / 10
+    let valorDizimo = document.getElementById("dizimo").innerHTML = "R$ " + dizimo.toFixed(2)
+    
+    let pacto = (sal/100)*pac
+    let valorPacto = document.getElementById("p").innerHTML = "R$ " + pacto.toFixed(2)
+}
